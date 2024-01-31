@@ -1,18 +1,15 @@
 ---
-layout: page
+layout: single
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Many problems we face involve making decisions within complex environments. But are we making the **optimal decision**?
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Missing information, probabilistic uncertainties, subconscious emotions, unseen circumstances, time constraints – all of them hinder sound decision-making. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+What can we do to **make sense** of all of the variables thrown at us?
 
+Take a deeper look in analyzing different sources of information available to us through the lenses of mathematics, statistics, psychology, economics, engineering, philosophy, and business. 
 
-[jekyll-organization]: https://github.com/jekyll
+Let's work toward to craft **unambiguous, unbiased, and impactful** solutions. 
