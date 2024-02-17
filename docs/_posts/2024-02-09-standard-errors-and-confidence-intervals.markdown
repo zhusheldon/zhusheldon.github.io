@@ -3,7 +3,6 @@ layout: single
 title:  "How Important are Standard Errors and Confidence Intervals?"
 date:   2024-02-09 00:00:00 -2300
 categories: Statistics
-mathjax: true
 ---
 
 # What is standard error?
@@ -16,7 +15,7 @@ After performing random sampling, you will obtain statistics based off of the da
 
 Say other people repeat this data collection procedure, and they obtain their own sample statistics. Given a certain probability value $$p$$ (a.k.a. the **confidence level**), their sample statistic, and the standard error, then they can then construct a **confidence interval**. This is a range centered around the sample statistic which usually increases and decreases with the confidence level. If people continuously collect sets of data on this population, we will obtain a collection of confidence intervals, and we can infer that $p$ percent of the confidence intervals contain the true population statistic. 
 
-# An Example
+# An Example in Python
 
 To better visualize this, let's simulate this sampling process from a standard normal distribution. We define $$X_1$$ as our set of data taken from a standard normal distribution, while $$X_2$$ is simply $$X_1$$ duplicated twice. $$X_2$$ is created to show how increasing the sample size decreases the standard error and the confidence interval range. While not shown below, standard error is proportional to standard deviation of the data, and so increasing standard deviation would increase both standard error and the confidence interval.
 

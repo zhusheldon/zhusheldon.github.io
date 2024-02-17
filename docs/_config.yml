@@ -280,6 +280,7 @@ defaults:
       share: true
       related: true
       mathjax: true
+      toc: true
 
 collections:
   statistics:

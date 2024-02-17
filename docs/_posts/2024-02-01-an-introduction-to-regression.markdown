@@ -7,7 +7,7 @@ categories: Statistics
 
 # What is the purpose of regression?
 
-Regression describes what kind of relationship one **target variable** shares with one or more other **features**. Typically, this target variable is a continuous numerical value. One reason to build out regression models is to **predict** or **forecast** how the target value changes when we change the values of one of the features. Another reason is to evaluate how influential each feature is in affecting the target. Determining how strong the **causal relationship** is between a certain feature and the target will allow us to focus more on it in the future.
+Regression is a modeling technique that describes what kind of relationship one **target variable** shares with one or more other **features**. Typically, this target variable is a continuous numerical value. One reason to build out regression models is to **predict** or **forecast** how the target value changes when we change the values of one of the features. Another reason is to evaluate how influential each feature is in affecting the target. Determining how strong the **causal relationship** is between a certain feature and the target will allow us to focus more on it in the future.
 
 ![Regression Example]({{ site.url }}{{ site.baseurl }}/assets/images/regression_heightvsweight.png)
 * A example of regression showcasing the linear relationship between people's height and weight.
@@ -16,7 +16,7 @@ Regression describes what kind of relationship one **target variable** shares wi
 
 When we have some data and we want to see what type of relationship exists between different features, then we can use regression. There are many different types of regression to determine what type of relationship variables share. The most simple type of regression is **simple linear regression**, which draws a line between two variables. This line helps us try and predict future target values when we only know one of the values.
 
-# An example through Python
+# An example in Python
 
 We can easily generate our own linear regression model using the Python programming language.
 {% highlight ruby %}
