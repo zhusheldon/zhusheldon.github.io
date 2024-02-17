@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "What is marketing mix modeling?"
+title:  "What is Marketing Mix Modeling (MMM)?"
 date:   2024-02-16 00:00:00 -2300
 categories: Marketing
 ---
