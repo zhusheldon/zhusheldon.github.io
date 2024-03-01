@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "What is Marketing Mix Modeling (MMM)?"
+title:  "What is Marketing Mix Modeling (MMM)? (with examples in Python)"
 date:   2024-02-16 00:00:00 -2300
 categories: Marketing
 ---
@@ -13,7 +13,7 @@ Marketing mix modeling is a modeling technique designed to describe what marketi
 
 Typically, marketing mix models are formulated using **regression models**, though you can use any model that describes the influence of one set of variables over another, like an influence maximization graph model or an agent-based simulation model. I talk about regression models [here]({% post_url 2024-02-01-an-introduction-to-regression %}).
 
-By creating a line of best fit between the marketing variabels we have influence over and our goal metric like net sales, revenue, profit, etc., we are able to create an extension of a simple linear regression called a multi-linear regression model. Rather than using only one independent variable to predict, this model uses multiple features to predict. 
+By creating a line of best fit between multiple marketing variables and our goal metric like net sales, revenue, profit, etc., we are able to create an extension of a simple linear regression called a multi-linear regression model. Rather than using only one independent variable to predict, this model uses multiple features to predict. 
 
 # Why is it useful?
 

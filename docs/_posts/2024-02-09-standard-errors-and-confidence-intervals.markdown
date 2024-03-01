@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "How Important are Standard Errors and Confidence Intervals?"
+title:  "How Important are Standard Errors and Confidence Intervals? (with examples in Python)"
 date:   2024-02-09 00:00:00 -2300
 categories: Statistics
 ---

@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "An Introduction to Regression"
+title:  "An Introduction to Regression (An example in Python)"
 date:   2024-02-01 00:00:00 -0500
 categories: Statistics
 ---
