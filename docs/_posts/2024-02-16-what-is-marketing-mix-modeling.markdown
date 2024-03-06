@@ -168,7 +168,7 @@ plt.show()
 
 Since the residuals of both models do follow a normal distribution, our data follows the assumptions of linear regression and has a linear relationship. Along with our low RMSE, we can be satisfied with using a linear regression model for our data.
 
-The neural network was able to achieve an RMSE of 1.49, better than the linear regression model from sklearn. The RMSE applied to our dataset indicates that the average error of our predicted sales value from the true sales value is typically around $1.49 mil. 
+The neural network was able to achieve an RMSE of 1.44, better than the linear regression model from sklearn. The RMSE applied to our dataset indicates that the average error of our predicted sales value from the true sales value is typically around $1.44 mil. 
 
 
 # Conclusion
