@@ -13,7 +13,7 @@ Marketing mix modeling is a modeling technique designed to describe what marketi
 
 Typically, marketing mix models are formulated using **regression models**, though you can use any model that describes the influence of one set of variables over another, like an influence maximization graph model or an agent-based simulation model. I talk about regression models [here]({% post_url 2024-02-01-an-introduction-to-regression %}).
 
-By creating a line of best fit between multiple marketing variables and our goal metric like net sales, revenue, profit, etc., we are able to create an extension of a simple linear regression called a multi-linear regression model. Rather than using only one independent variable to predict, this model uses multiple features to predict. 
+By creating a line of best fit between multiple marketing variables and our goal metric like net sales, revenue, profit, etc., we are able to create a multi-linear regression model which uses multiple features to predict our target. 
 
 # Why is it useful?
 
@@ -70,7 +70,9 @@ print('Regression coefficients: ', reg.coef_)
 print('Regression Intercept: ', reg.intercept_)
 print('RMSE: ', np.sqrt(mean_squared_error(y_pred, y_test)))
 print('MAE: ', mean_absolute_error(y_pred, y_test))
-print('Explained Variancce: ', explained_variance_score(y_pred, y_test))
+print('Explained Variance: ', explained_variance_score(y_pred, y_test))
+print('Adjusted R^2:', 1 - (1-reg.score(X_train, y_train))*(len(y_train)-1)/(len(y_train)-X_train.shape[1]-1))
+
 
 residual = y_pred - y_test
 plt.hist(residual, bins=25)
@@ -164,9 +166,10 @@ plt.show()
 {% endhighlight %}
 ![LossCurve]({{ site.url }}{{ site.baseurl }}/assets/images/MMM_04.png)
 
-Since the residuals of both models do follow a normal distribution, along with our low RMSE, we can be satisfied with using a linear regression model for our data.
+Since the residuals of both models do follow a normal distribution, our data follows the assumptions of linear regression and has a linear relationship. Along with our low RMSE, we can be satisfied with using a linear regression model for our data.
 
-With the RMSE from both models being relatively close, we can assume both models perform similarly. The RMSE of around 1 applied to our dataset indicates that the average error of our predicted sales value from the true sales value is typcally around $1 mil. 
+The neural network was able to achieve an RMSE of 1.49, better than the linear regression model from sklearn. The RMSE applied to our dataset indicates that the average error of our predicted sales value from the true sales value is typically around $1.49 mil. 
+
 
 # Conclusion
 
