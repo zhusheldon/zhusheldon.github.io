@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "What are people doing with their time? - Part 1"
+title:  "Tracking time - Part 1"
 date:   2025-12-05 00:00:00 -2300
 categories: Productivity
 ---
