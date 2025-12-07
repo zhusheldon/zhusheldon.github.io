@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Sheldon Zhu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Analyst at ADM"
-  location         : 
+  bio              : ""
+  location         : "New York, NY"
   email            : 
   links:
     - label: "Email"

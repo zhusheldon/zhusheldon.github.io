@@ -1,0 +1,386 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* ========================================
+   CUSTOM PURPLE THEME OVERRIDE
+   ======================================== */
+
+/* Primary Purple Colors */
+$purple-primary: #7c3aed;
+$purple-dark: #6d28d9;
+$purple-light: #a78bfa;
+$purple-lighter: #c4b5fd;
+
+/* Hero Section */
+.page__hero--overlay {
+  background: linear-gradient(135deg, $purple-primary 0%, $purple-dark 100%) !important;
+}
+
+/* All Primary Buttons */
+.btn--primary {
+  background-color: $purple-primary !important;
+  border-color: $purple-primary !important;
+  
+  &:hover {
+    background-color: $purple-dark !important;
+    border-color: $purple-dark !important;
+  }
+  
+  &:visited {
+    background-color: $purple-primary !important;
+  }
+}
+
+/* Links Throughout Site */
+a {
+  color: $purple-primary;
+  
+  &:hover {
+    color: $purple-dark;
+  }
+  
+  &:visited {
+    color: darken($purple-primary, 5%);
+  }
+}
+
+/* Navigation Active/Hover States */
+.greedy-nav a:hover,
+.greedy-nav a.active {
+  color: $purple-primary !important;
+}
+
+.greedy-nav .visible-links a:hover {
+  color: $purple-primary !important;
+}
+
+.greedy-nav .visible-links a:before {
+  background: $purple-primary !important;
+}
+
+/* Masthead Links */
+.masthead__menu-item:hover {
+  color: $purple-primary !important;
+}
+
+/* Page Title and Headings */
+.page__title {
+  color: $purple-dark;
+}
+
+/* Archive Item Titles (Blog Post Links) */
+.archive__item-title {
+  a {
+    color: $purple-dark !important;
+    
+    &:hover {
+      color: $purple-primary !important;
+    }
+  }
+}
+
+/* Read More Links */
+.archive__item-excerpt p a {
+  color: $purple-primary !important;
+  
+  &:hover {
+    color: $purple-dark !important;
+  }
+}
+
+/* Pagination */
+.pagination {
+  .current {
+    background: $purple-primary;
+  }
+  
+  a {
+    color: $purple-primary;
+    
+    &:hover {
+      color: white;
+      background: $purple-primary;
+    }
+  }
+}
+
+/* Social Share Buttons */
+.page__share a {
+  color: $purple-primary !important;
+  
+  &:hover {
+    color: $purple-dark !important;
+  }
+}
+
+/* Table of Contents */
+.toc {
+  border-color: $purple-light;
+  
+  .active a {
+    color: $purple-primary;
+    border-left-color: $purple-primary;
+  }
+  
+  a:hover {
+    color: $purple-dark;
+  }
+}
+
+/* Author Profile Links */
+.author__urls a {
+  color: inherit;
+  
+  &:hover {
+    color: $purple-primary !important;
+  }
+}
+
+.author__urls-wrapper .btn {
+  background: $purple-primary;
+  
+  &:hover {
+    background: $purple-dark;
+  }
+}
+
+/* Tags */
+.page__taxonomy-item {
+  background: $purple-lighter;
+  
+  &:hover {
+    background: $purple-light;
+  }
+}
+
+.taxonomy__index a {
+  color: $purple-primary;
+  
+  &:hover {
+    color: $purple-dark;
+  }
+}
+
+/* Archive List Items */
+.list__item .archive__item-teaser {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.list__item:hover {
+  .archive__item-title a {
+    color: $purple-primary !important;
+  }
+}
+
+/* Feature Row Styling */
+.feature__wrapper {
+  .archive__item {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    
+    &:hover {
+      box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+      transform: translateY(-5px);
+    }
+  }
+  
+  .archive__item-title {
+    color: $purple-dark !important;
+    font-weight: 700;
+  }
+  
+  .archive__item-excerpt {
+    color: #4b5563;
+  }
+  
+  .btn {
+    background: $purple-primary;
+    color: white;
+    
+    &:hover {
+      background: $purple-dark;
+    }
+  }
+}
+
+/* Intro Section */
+.feature__wrapper .archive__item-excerpt {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* Header Actions Button */
+.page__hero .btn {
+  background-color: white !important;
+  color: $purple-primary !important;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  border: 2px solid white !important;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    transform: scale(1.05);
+  }
+}
+
+/* Page Hero Excerpt */
+.page__hero .page__lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  
+  strong {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Blog Posts Section */
+.entries-list {
+  margin-top: 2rem;
+  
+  .list__item {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #f9fafb;
+      border-left: 4px solid $purple-primary;
+      padding-left: 1rem;
+    }
+  }
+}
+
+/* Post Meta Information */
+.page__meta {
+  color: #6b7280;
+  
+  a {
+    color: $purple-primary;
+    
+    &:hover {
+      color: $purple-dark;
+    }
+  }
+}
+
+/* Read Time */
+.page__meta .far {
+  color: $purple-primary;
+}
+
+/* Comment Count */
+.page__comments-title,
+.comment__date {
+  color: $purple-primary;
+}
+
+/* Footer Links */
+.page__footer {
+  a {
+    color: inherit;
+    
+    &:hover {
+      color: $purple-primary !important;
+    }
+  }
+}
+
+.page__footer-follow .social-icons a {
+  &:hover {
+    color: $purple-primary !important;
+  }
+}
+
+/* Search */
+.search__toggle {
+  color: $purple-primary !important;
+  
+  &:hover {
+    color: $purple-dark !important;
+  }
+}
+
+/* Code Blocks */
+.highlight {
+  border-left: 4px solid $purple-primary;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid $purple-primary;
+}
+
+/* Notice/Alert Boxes */
+.notice {
+  border-left: 4px solid $purple-primary;
+}
+
+.notice--primary {
+  background-color: lighten($purple-lighter, 10%);
+  border-left-color: $purple-primary;
+}
+
+/* Sidebar */
+.sidebar a {
+  &:hover {
+    color: $purple-primary !important;
+  }
+}
+
+/* Related Posts */
+.page__related {
+  a {
+    color: $purple-primary;
+    
+    &:hover {
+      color: $purple-dark;
+    }
+  }
+}
+
+/* Category/Tag Cloud */
+.taxonomy__section {
+  a {
+    color: $purple-primary;
+    
+    &:hover {
+      color: $purple-dark;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Custom Selection Color */
+::selection {
+  background-color: $purple-lighter;
+  color: $purple-dark;
+}
+
+::-moz-selection {
+  background-color: $purple-lighter;
+  color: $purple-dark;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page__hero .page__lead strong {
+    font-size: 1.5rem;
+  }
+  
+  .page__hero .page__lead {
+    font-size: 1.1rem;
+  }
+}
