@@ -5,9 +5,9 @@ date:   2025-12-05 00:00:00 -2300
 categories: Productivity
 ---
 
-If I ask you, "What did you do yesterday?",  what would you say? 
+How did you spend your time yesterday?
 
-Most people would give a vague overview of 1 or 2 things they did, some would say "Not much.", others would go really in-depth into one specific activity. But almost no one is able to give a time-by-by outline of how they spent their day. 
+When presented with this question, most people would give a vague overview of 1 or 2 things they did, some would say "Not much.", others would go really in-depth into one specific activity. But almost no one is able to give a time-by-by outline of how they spent their day. 
 
 Which is ironic to think about when there are so many calendar and planning tools for people to plan out their day (and some people will plan their day out viligantly) but during active recall, people can't seem to remember.
 
